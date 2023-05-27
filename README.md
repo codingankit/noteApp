@@ -9,10 +9,20 @@ This is a simple note-taking application built with JavaScript. Users can add, d
 - Update a note: Users can edit and update the content of an existing note.
 - View notes: Users can see a list of all the notes they have created, along with the date and time of each note.
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/codingankit/noteApp.git`
 2. Navigate to the project directory: `cd noteApp`
+
+## Demo
+
+You can try out the [live demo here](https://codingankit.github.io/noteApp).
 
 ## Usage
 
