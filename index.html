@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="scripts/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h2 id="heading">Notes App</h2>
+      </div>
+      <div id="notesWrapper">
+        <!--<div class="noteDiv">
+          <div class="noteDivHeader">
+            <div class="noteTitle">Friday party with freinds</div>
+            <div class="mainNote">
+              Me,Subhadip,Debojit,Rohan,Bijay,Samin and Bura will have party in
+              dominos,siliguri on 12th September
+            </div>
+          </div>
+          <div class="noteDivFooter">
+            <span class="material-symbols-rounded editBtn"> edit_note </span>
+            <span class="material-symbols-rounded deleteBtn"> delete </span>
+            <span class="dateTime">Thursday, Aug 12 2022 at 12:08</span>
+          </div>
+        </div>-->
+      </div>
+      <div id="nothingToShowDiv">
+        <h2>Nothing to Show,<span id="addNoteText">Add Note</span></h2>
+      </div>
+      <div id="addNoteBtn">
+        <span class="material-symbols-rounded btn">add</span>
+      </div>
+    </div>
+    <div id="noteAddDiv">
+      <div id="noteAddCloseBtn">
+        <span class="material-symbols-rounded"> close </span>
+      </div>
+      <div class="noteAddEditHeader">
+        <h2>Add Note</h2>
+      </div>
+      <form id="noteAddForm" autocomplete="off">
+        <div class="inputGroup">
+          <input type="text" id="noteAddTitle" placeholder="Title" />
+          <span class="errTxt" id="noteAddTitleErrTxt"></span>
+        </div>
+        <div class="inputGroup">
+          <textarea id="noteAddNoteTxt" placeholder="Note..."></textarea>
+          <span class="errTxt" id="noteTextAddErrTxt"></span>
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="noteAddEditBtn"
+            id="noteAddBtn"
+            value="Add"
+          />
+        </div>
+      </form>
+    </div>
+    <div id="noteEditDiv">
+      <div id="noteEditCloseBtn">
+        <span class="material-symbols-rounded"> close </span>
+      </div>
+      <div class="noteAddEditHeader">
+        <h2>Edit Note</h2>
+      </div>
+      <form id="noteEditForm" novalidate autocomplete="off">
+        <div class="inputGroup">
+          <input type="text" id="noteEditTitle" placeholder="Title" />
+          <span class="errTxt" id="noteEditTitleErrTxt"></span>
+        </div>
+        <div class="inputGroup">
+          <textarea id="noteEditNoteTxt" placeholder="Note..."></textarea>
+          <span class="errTxt" id="noteTextEditErrTxt"></span>
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="noteAddEditBtn"
+            id="noteEditBtn"
+            value="Update"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
